@@ -7,6 +7,8 @@
  * and https://stackoverflow.com/questions/39488327/how-to-format-output-to-a-byte-array-with-no-std-and-no-allocator
  */
 
+#![no_std]
+
 use core::fmt::Write;
 use core::ptr::read_volatile;
 use core::slice;
