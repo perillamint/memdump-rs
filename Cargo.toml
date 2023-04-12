@@ -7,6 +7,7 @@ name = "memdump"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
+description = "Handy unsafe no_std memory dumper utility library written in Rust."
 repository = "https://github.com/perillamint/memdump-rs"
 keywords = ["hexdump", "memdump", "unsafe", "no_std"]
 
