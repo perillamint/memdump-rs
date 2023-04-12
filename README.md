@@ -13,7 +13,7 @@ const FOO: &str = "Hello, world!\n What is your name?";
 
 fn example_func() {
     unsafe {
-        ramdump(FOO.as_ptr(), FOO.len(), |s| println!("{}", s));
+        memdump(FOO.as_ptr(), FOO.len(), |s| println!("{}", s));
     }
 }
 ```

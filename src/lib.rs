@@ -47,7 +47,7 @@ impl<'a> core::fmt::Write for Wrapper<'a> {
 
 /// This function accepts *u8 raw pointer and dumps it to the defmt log.
 /// Due to its nature, it is unsafe.
-pub unsafe fn ramdump<F>(buf: *const u8, len: usize, printfn: F)
+pub unsafe fn memdump<F>(buf: *const u8, len: usize, printfn: F)
 where
     F: Fn(&str),
 {
