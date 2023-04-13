@@ -59,8 +59,8 @@ where
         let chunk = slice::from_raw_parts(buf.add(offset), chunklen);
         offset += chunklen;
 
-        // 88-byte length buffer;
-        let mut outbuf = [0u8; 96];
+        // 90-byte length buffer;
+        let mut outbuf = [0u8; 90];
         let mut bufwrap = Wrapper::new(&mut outbuf);
 
         write!(bufwrap, "{:018p} | ", chunk.as_ptr()).unwrap();
