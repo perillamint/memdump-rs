@@ -4,7 +4,7 @@
 
 [package]
 name = "memdump"
-version = "0.1.2"
+version = "0.1.3"
 edition = "2021"
 license = "MIT"
 description = "Handy unsafe no_std memory dumper utility library written in Rust."
